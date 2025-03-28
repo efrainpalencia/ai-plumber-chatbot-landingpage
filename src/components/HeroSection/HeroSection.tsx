@@ -1,22 +1,22 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import BackgroundBlur from "../BackgroundBlur/BackgroundBlur";
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full min-h-screen bg-slate-900 overflow-hidden">
+    <section className="">
       <BackgroundBlur />
 
       {/* Background Image */}
       <img
         src="bot-background.png"
         alt="PipeLine AI Bot"
-        className="absolute z-0 top-24 left-1/2 -translate-x-1/2 w-[350px] sm:w-[450px] md:w-[600px] lg:w-[600px] opacity-80 pointer-events-none select-none"
+        className="absolute z-0 top-28 left-1/2 -translate-x-1/2 w-[350px] sm:w-[450px] md:w-[600px] lg:w-[600px] opacity-80 pointer-events-none select-none"
       />
 
       {/* Content Container */}
-      <div className="relative z-10 container mx-auto px-2 py-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-12">
+      <div className="relative z-10 container mx-auto px-2 py-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-24">
         {/* Left: Hero Text */}
-        <div className="flex-1 flex flex-col gap-6 max-w-xl">
+        <div className="flex-1 flex flex-col lg:pr-22 gap-6 max-w-xl">
           <div className="text-white text-2xl md:text-3xl font-extralight">
             INTRODUCING
           </div>
@@ -39,12 +39,12 @@ const HeroSection = () => {
           </p>
 
           <button className="w-fit px-3 py-1.5 border border-white text-white rounded-2xl text-base font-medium hover:bg-white hover:text-slate-900 transition">
-            Learn More
+            <Link to="/offerings">Learn More</Link>
           </button>
         </div>
 
         {/* Right: Feature Box */}
-        <div className="flex-1 w-full lg:max-w-md mt-8 lg:mt-96">
+        <div className="flex-1 w-full lg:max-w-md mt-8 lg:mt-84 lg:pl-8">
           <div className="">
             <div className="flex items-center gap-4 mb-4">
               <h2 className="text-white text-2xl font-light">
