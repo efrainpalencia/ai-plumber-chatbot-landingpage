@@ -78,7 +78,7 @@ const WaitListForm: FC = () => {
               id="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              placeholder="What are you interested in?"
+              placeholder="What services are you interested in?"
               className="block w-full rounded-lg p-2 text-gray-300"
             />
           </div>
