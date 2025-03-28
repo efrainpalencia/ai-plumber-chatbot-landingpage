@@ -2,7 +2,7 @@ import React, { FC, useState } from "react";
 import { useFormspark } from "@formspark/use-formspark";
 import { useNavigate } from "react-router-dom";
 
-const FORMSPARK_FORM_ID = "QqNQO4Vu6";
+const FORMSPARK_FORM_ID = import.meta.env.VITE_FORMSPARK_FORM_ID;
 
 const WaitListForm: FC = () => {
   const [submit, submitting] = useFormspark({ formId: FORMSPARK_FORM_ID });
