@@ -14,9 +14,9 @@ const HeroSection = () => {
       />
 
       {/* Content Container */}
-      <div className="relative z-10 container mx-auto px-2 py-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-24">
+      <div className="relative z-10 container mx-auto px-2 py-10 flex flex-col lg:flex-row  items-start lg:items-center justify-between gap-24">
         {/* Left: Hero Text */}
-        <div className="flex-1 flex flex-col lg:pr-22 gap-6 max-w-xl">
+        <div className="flex-1 flex flex-col lg:pr-22 gap-6 max-w-xl ">
           <div className="text-white text-2xl md:text-3xl font-extralight">
             INTRODUCING
           </div>
@@ -29,7 +29,7 @@ const HeroSection = () => {
             AI that fills your plumbing pipeline
           </p>
 
-          <p className="text-white text-base sm:text-lg leading-relaxed">
+          <p className="text-white text-base px-2 sm:text-lg leading-relaxed bg-slate-800 rounded-xl">
             While you’re fixing pipes, your chatbot is booking jobs. Capture
             leads instantly, respond after hours, and grow your business while
             your AI works as hard as you do.{" "}
@@ -44,7 +44,7 @@ const HeroSection = () => {
         </div>
 
         {/* Right: Feature Box */}
-        <div className="flex-1 w-full lg:max-w-md mt-8 lg:mt-84 lg:pl-8">
+        <div className="flex-1 w-full lg:max-w-md mt-8 lg:mt-84 lg:pl-8 px-2 bg-slate-800 rounded-xl">
           <div className="">
             <div className="flex items-center gap-4 mb-4">
               <h2 className="text-white text-2xl font-light">
